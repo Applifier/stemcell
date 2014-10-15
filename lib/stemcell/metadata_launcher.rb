@@ -63,7 +63,7 @@ module Stemcell
         next if key == "aws_secret_key"
         value = options[key]
         next unless value
-        spaces = " " * (23 - key.length)
+        spaces = " " * (40 - key.length)
         puts "  #{key}#{spaces}#{value.to_s.green}"
       end
 
